@@ -3,6 +3,6 @@ from django.http import HttpResponse, HttpRequest
 
 def index(request):
     assert isinstance(request, HttpRequest)
-    return HttpResponse('Hello World!')
+    return render(request, 'dev_metrics_dashboard.html')
         
 
