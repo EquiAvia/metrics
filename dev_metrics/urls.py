@@ -19,4 +19,5 @@ from dev_metrics import views
 
 urlpatterns = [
     url(r'^$', views.index, name='dev_metrics_index'),
+    url(r'^addmetrics/', views.get_add_metrics, name='dev_metrics_add'),
 ]
